@@ -168,11 +168,3 @@ Yes. The preferred mode is Appilot’s no-ADB wireless control. ADB/USB fallback
 </a>
 </p>
 
-
-
-
-
-
-
-
-ChatGPT can make mistak
