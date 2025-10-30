@@ -63,13 +63,13 @@ This bot automates the process of liking Threads posts on real Android devices a
   </a>
 </p>
 
-## How It Works (must)
+## How It Works
 1. **Input or Trigger** — Start a job in Appilot by selecting targets (hashtags, profiles, search queries) and setting session duration, daily caps, and concurrency per device/account.  
 2. **Core Logic** — The runner controls Android via **UI Automator/Appium** or Appilot’s wireless channel, opens Threads, scrolls feed, detects like buttons with accessibility locators, and taps with randomized offsets and delays.  
 3. **Output or Action** — Likes are performed according to rules (e.g., 1 in N posts, skip duplicates, stop on limit), and results (counts, errors, session time) are recorded and pushed to the dashboard.  
 4. **Other functionalities** — Built-in retry logic, error classification, structured logging, backoff strategies, and parallel processing across device buckets ensure stable throughput and easy troubleshooting.
 
-## Tech Stack (must)
+## Tech Stack 
 - **Language:** Kotlin, Java, Python, JavaScript  
 - **Frameworks:** Appium, UI Automator, Espresso, Robot Framework, Cucumber  
 - **Tools:** Appilot, Android Debug Bridge (ADB), Appium Inspector, Bluestacks, Nox Player, Scrcpy, Firebase Test Lab, MonkeyRunner, Accessibility  
@@ -132,7 +132,7 @@ threads-auto-like-bot/
 ├── package.json
 └── README.md
 ```
-## Use Cases (must)
+## Use Cases
 - **Creators** use it to like within their niche feeds, so they can trigger more impressions and community visibility.  
 - **Agencies** use it to run multi-account campaigns, so they can deliver measurable engagement for clients at scale.  
 - **Growth teams** use it to warm up fresh accounts, so they can reduce blocks and reach safe daily action velocity.  
@@ -154,7 +154,7 @@ Home feed, hashtag/topic feeds, profile timelines, and keyword search results, w
 **Will it work without USB/ADB?**  
 Yes. The preferred mode is Appilot’s no-ADB wireless control. ADB/USB fallback is available for debugging and certain device farms.
 
-## Performance & Reliability Benchmarks (must)
+## Performance & Reliability Benchmarks
 - **Execution Speed:** 180–320 safe likes per account per day in drip mode (adaptive to risk signals and time windows).  
 - **Success Rate:** 95% end-to-end task completion across stable networks with recommended device prep.  
 - **Scalability:** Proven orchestration patterns for **300–1000 devices** using sharded queues and per-bucket proxies.  
